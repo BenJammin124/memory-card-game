@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f9fc;
+  color: #333;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  /* display: block; */
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.card-grid {
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  border: 2px solid #cce7ff;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-color: #ffcb05;
+}
+
+.card h1 {
+  font-size: 1.2rem;
+  color: #333;
+
+  text-transform: capitalize;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 3px solid #cce7ff;
+  text-align: center;
+}
+
+header .flex div {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+header .flex div:first-child {
+  color: #28a745;
+}
+
+header .flex div:last-child {
+  color: #8f7200;
+}
+header:not(div:first-child) {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "Mitr";
+  font-weight: 500;
+}
+
+.card h1 {
+  font-size: larger;
+}
+
+.card p {
+  font-style: italic;
+  color: #aaa;
+}
